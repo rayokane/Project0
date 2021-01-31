@@ -3,18 +3,50 @@
     <head>
         <title>Search</title>
         <style>
-            h1 {
-                color: blue;
-                text-align: center;
+            div#links{
+                color: blue; 
+                text-align: right;
             }
+            
+            input#searchbox{
+                width:500px; /*same as the height*/
+                font-size:1em;
+                /*set the border-radius at half the size of the width and height*/
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                }
+                /***NOW STYLE THE BUTTON'S HOVER STATE***/
+                input#searchbox:hover{
+                background:lightgray;
+                }
+            
+
         </style>
     </head>
     <body>
-        <h1>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-        </h1>
+        <div id="links" >
+            <!--I think I can comment using these symbols.-->
+            <!--Cool. OK, I need some links up the top right.-->
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+
+        </div>
+            <h1 id="boogle">
+                <span style="color: royalblue;">B</span>
+                <span style="color: red;">o</span>
+                <span style="color: orange;">o</span>
+                <span style="color: royalblue;">g</span>
+                <span style="color: green;">l</span>
+                <span style="color: red;">e</span>
+            </h1>
+            <h2>
+            <form style="text-align: center; border-radius: 5px;"
+            action="https://google.com/search">
+                <input id="searchbox" type="text" name="q">
+                    </br>
+                <input type="submit" value="Google Search">
+            </form>
+            </h2>
     </body>
 </html>
